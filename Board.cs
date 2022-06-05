@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace AzMogaTukISega
 {
@@ -16,7 +15,7 @@ namespace AzMogaTukISega
         {
             setN(n);
             setM(m);
-            initializeBoard();
+            InitializeBoard();
         }
         public static int GetN { get => Board.n; }
         public static int GetM { get => Board.m; }
@@ -194,7 +193,7 @@ namespace AzMogaTukISega
             this.DrawQueenAttackingFieldsUpLeft(queen);
         }
 
-        public bool isBoardFull()
+        public bool IsBoardFull()
         {
             return freeFields.Count == 0;
         }
@@ -207,7 +206,7 @@ namespace AzMogaTukISega
                 Console.WriteLine($"x: {field[1] + 1} y: {field[0] + 1}");
             }
         }
-        private void initializeBoard()
+        private void InitializeBoard()
         {
             freeFields = new List<int[]>();
             board = new char[Board.GetN,Board.GetM];

@@ -1,11 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace AzMogaTukISega
 {
-    internal class Program
+    public class Engine
     {
-        static void Main(string[] args)
+        //private Singleton1() { }
+        //private static Singleton1 instance = null;
+        //public static Singleton1 Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new Singleton1();
+        //        }
+        //        return instance;
+        //    }
+        //}
+        private static Engine instance = null;
+        private Engine() { }
+        public static Engine Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Engine();
+                    return instance;
+                }
+                return null;
+            }
+        }
+        public void Run()
         {
             Console.WriteLine(@"Welcome to the Queens
 For the past 12 months, Sotir and Gozuma have spent an average of 7 hours a day playing
@@ -32,11 +60,11 @@ I put a queen.");
             Console.WriteLine("Choose game type:");
             Console.WriteLine("1.Player vs Robot");
             Console.WriteLine("2.Player vs Player");
-            IRobot robot=null;
+            IRobot robot = null;
             int gameType = int.Parse(Console.ReadLine());
             if (gameType == 1)
             {
-                while (robot==null)
+                while (robot == null)
                 {
                     Console.WriteLine("Choose robot difficult type:");
                     Console.WriteLine("Easy");
@@ -91,9 +119,9 @@ I put a queen.");
                             Console.WriteLine($"Please set new values for x and y that have type integer!!!");
                         }
                     }
-                    Queen queen = new Queen(y,x);
+                    Queen queen = new Queen(y, x);
                     board.AddQueen(queen);
-                    if (board.isBoardFull())
+                    if (board.IsBoardFull())
                     {
                         Console.WriteLine("Player won!");
                         return;
@@ -103,7 +131,7 @@ I put a queen.");
                     Console.WriteLine("Robot:");
                     queen = robot.GetQueen(board.GetFreeFields, board.BoardMatrix);
                     board.AddQueen(queen);
-                    if (board.isBoardFull())
+                    if (board.IsBoardFull())
                     {
                         Console.WriteLine("Robot won!");
                         return;
@@ -111,7 +139,7 @@ I put a queen.");
                     board.PrintBoard();
                 }
             }
-            
+
             else if (gameType == 2)
             {
                 int n, m;
@@ -152,9 +180,9 @@ I put a queen.");
                             Console.WriteLine($"Please set new values for x and y that have type integer!!!");
                         }
                     }
-                    Queen queen = new Queen(y,x);
+                    Queen queen = new Queen(y, x);
                     board.AddQueen(queen);
-                    if (board.isBoardFull())
+                    if (board.IsBoardFull())
                     {
                         Console.WriteLine("Player 1 won!");
                         return;
@@ -177,9 +205,9 @@ I put a queen.");
                             Console.WriteLine($"Please set new values for x and y that have type integer!!!");
                         }
                     }
-                    queen = new Queen(y,x);
+                    queen = new Queen(y, x);
                     board.AddQueen(queen);
-                    if (board.isBoardFull())
+                    if (board.IsBoardFull())
                     {
                         Console.WriteLine("Player 2 won!");
                         return;

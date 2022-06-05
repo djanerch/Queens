@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AzMogaTukISega
 {
-    public class HardRobot:IRobot
+    public class HardRobot : IRobot
     {
-        public Queen GetQueen(List<int[]> freeFields)
-        {
-            return null;
-        }
-
         public Queen GetQueen(List<int[]> freeFields, char[,] board)
         {
             Queen queen = null;
@@ -21,7 +15,7 @@ namespace AzMogaTukISega
                 if (countOfKilledField > bestSolution)
                 {
                     bestSolution = countOfKilledField;
-                    queen = new Queen(cordinates[0]+1, cordinates[1]+1);
+                    queen = new Queen(cordinates[0] + 1, cordinates[1] + 1);
                 }
             }
 
