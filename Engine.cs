@@ -6,19 +6,6 @@ namespace AzMogaTukISega
 {
     public class Engine
     {
-        //private Singleton1() { }
-        //private static Singleton1 instance = null;
-        //public static Singleton1 Instance
-        //{
-        //    get
-        //    {
-        //        if (instance == null)
-        //        {
-        //            instance = new Singleton1();
-        //        }
-        //        return instance;
-        //    }
-        //}
         private static Engine instance = null;
         private Engine() { }
         public static Engine Instance
