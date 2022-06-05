@@ -1,0 +1,14 @@
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.csproj.AssemblyReference.cache
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.GeneratedMSBuildEditorConfig.editorconfig
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.AssemblyInfoInputs.cache
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.AssemblyInfo.cs
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.csproj.CoreCompileInputs.cache
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.exe
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.deps.json
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.runtimeconfig.json
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.runtimeconfig.dev.json
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.dll
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\bin\Debug\netcoreapp3.1\AzMogaTukISega.pdb
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.dll
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.pdb
+D:\BoardGame\BoardGame-Borino\AzMogaTukISega\obj\Debug\netcoreapp3.1\AzMogaTukISega.genruntimeconfig.cache
